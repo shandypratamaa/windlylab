@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, ReactNode } from 'react'
-import { Activity, AlertTriangle, ArrowRight, BookOpen, CarFront, CheckCircle2, ChevronDown, CircleHelp, Cpu, Cuboid, Eraser, Gauge, GraduationCap, Home, Info, Maximize, Move3D, Pause, Plane, Play, Radio, RotateCcw, Sparkles, Sun, Wind, X } from 'lucide-react'
+import { Activity, AlertTriangle, ArrowRight, BookOpen, CarFront, CheckCircle2, ChevronDown, CircleHelp, Cpu, Cuboid, Eraser, Gauge, GraduationCap, Home, Info, Laptop, Maximize, Move3D, Pause, Plane, Play, Radio, RotateCcw, Sparkles, Sun, Tablet, Wind, X } from 'lucide-react'
 import { models, defaultModel } from '../features/model-library/models'
 import { airDensityIdealGas, airViscositySutherland, dynamicPressurePa, machNumber, reynoldsNumber } from '../physics/aerodynamic-formulas'
 import type { ExperimentSettings, ModelDefinition, SolverJob } from '../types'
@@ -698,7 +698,7 @@ function SurfaceBar({ separation }: { separation: number | null }) {
 function WelcomePage({ onStart }: { onStart: () => void }) {
   const art = useRef<HTMLDivElement>(null)
   return <main className="welcome-page">
-    <header className="welcome-top"><span className="brand-mark"><BrandMark size={20} /></span><span className="brand-text"><span className="welcome-brand">WindlyLab</span><span className="brand-by">By Shandy Putra</span></span><span className="welcome-top-rule" /></header>
+    <header className="welcome-top"><span className="brand-mark"><BrandMark size={20} /></span><span className="brand-text"><span className="welcome-brand">WindlyLab</span><span className="brand-by">By Shandy Putra</span></span></header>
     <section className="welcome-hero">
       <WelcomeFlow art={art} />
       <div className="welcome-shade" aria-hidden="true" />
@@ -707,6 +707,7 @@ function WelcomePage({ onStart }: { onStart: () => void }) {
           <h1>See the air move.</h1>
           <div className="welcome-actions"><button className="start-button" onClick={onStart}>Open wind tunnel <ArrowRight size={16} /></button><a className="welcome-more" href="#about">What's inside <ChevronDown size={14} /></a></div>
           <div className="welcome-legend" aria-hidden="true"><span><i className="lg-slat" /> Slat</span><span><i className="lg-main" /> Main wing</span><span><i className="lg-flap" /> Double-slotted flap</span></div>
+          <p className="device-note"><span className="device-icons" aria-hidden="true"><Laptop size={14} /><Tablet size={13} /></span><span>Using a <em>laptop</em> or <em>tablet</em> is recommended for the best experience</span></p>
         </div>
         <div className="welcome-art" ref={art} aria-hidden="true" />
       </div>

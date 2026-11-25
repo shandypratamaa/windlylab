@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+backend/runs/
+__pycache__/
+*.py[cod]
+.vercel
+.claude/
+.env*

@@ -478,3 +478,4 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased}
 .device-icons{display:inline-flex;align-items:center;gap:3px;padding:5px 8px;border-radius:999px;background:#163a37;color:#7fe0d4}
 .device-note em{font-style:normal;font-weight:600;background:linear-gradient(90deg,#7fe0d4,#a9f3e9 55%,#6f9cff);-webkit-background-clip:text;background-clip:text;color:transparent}
 @media(max-width:580px){.device-note{font-size:11.5px;border-radius:14px;align-items:flex-start}.device-icons{margin-top:1px}}
+.welcome-page .welcome-top{border-bottom:0;box-shadow:none}
